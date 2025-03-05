@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html= lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listas y formularios</title>
+        <style>
+            th
+            {
+                background-color: rgb(202, 241, 110);
+            }
+        </style>
+    </head>
+    <body style="background-color: #eeeeee;">
+        <h1>Materias Principales</h1>
+        <ol type="">
+            <li>Algoritmica</li>
+            <li>Arquitectura del computador</li>
+            <li>Proyecto</li>
+        </ol>
+        <ul type="square">
+                <li>Matematicas</li>
+                <li>Acreditable</li>
+                <li>Formacion Critica</li>
+        </ul>
+
+        <h3>Objetivos</h3>
+        <dl>
+            <li>Estudiar</li>
+            <li>Practicar</li>
+            <li>Exponer</li>
+        </dl>
+
+        <h2>Tabla</h2>
+    <table style="background-color: white;" border="2">
+        <caption style="background-color: black;color:#eeeeee;font-family: Arial, Helvetica, sans-serif;">Horario de clases</caption>
+        <tr>
+            <th style="background-color: black;color:#eeeeee; font-family: Arial, Helvetica, sans-serif;"> Hora </th>
+            <th> Lunes </th>
+            <th> Martes </th>
+            <th> Miercoles </th>
+            <th> Jueves </th>
+            <th> Viernes </th>
+            <th> Sabado </th>
+            <th> Domingo </th>
+        </tr>
+        <tr>
+            <td style="text-align: center;padding: 5px">8:00-9:20</td>
+            <td><br></td>
+            <td style="text-align: center;background-color: #5381ff;font-family: Arial, Helvetica, sans-serif;padding: 5px;">Matematicas-1<br>Miguel Rodriguez</td>
+            <td colspan="2"></td>
+            <td style="text-align: center;background-color: #5381ff; font-family: Arial, Helvetica, sans-serif;padding: 5px">Formacion Critica-1<br>Ruben Godoy</td>
+            <td><br></td>
+            <td rowspan="7"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;padding: 5px;">9:20-10:40</td>
+            <td><br></td>
+            <td style="text-align: center; background-color: #5381ff;font-family: Arial, Helvetica, sans-serif;padding: 5px">Acreditable-1<br>Miguel Rodriguez</td>
+            <td colspan="2"></td> 
+            <td style="text-align: center;background-color: #5381ff; font-family: Arial, Helvetica, sans-serif;padding: 5px;">Electiva-1<br>Lerida figeroa</td> 
+            <td><br></td> 
+        </tr>
+        <tr>
+            <td style="text-align: center;padding: 5px;">10:00-10:40</td>
+            <td colspan="5"></td>
+            <td rowspan="2" style="text-align: center;background-color: #5381ff; font-family: Arial, Helvetica, sans-serif;padding: 5px;">Algoritmica-1<br>Sol Hernandez</td>     
+        </tr>
+        <tr>
+            <td style="text-align: center;padding: 5px;">10:20-12:20</td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;padding: 5px;">12:20-1:00</td>
+            <td colspan="4"></td>
+            <td rowspan="2" style="text-align: center;background-color: #5381ff; font-family: Arial, Helvetica, sans-serif;padding: 5px;">Proyecto-1<br>Marling Brito</td>  
+            <td style="text-align: center;background-color: #5381ff; font-family: Arial, Helvetica, sans-serif;padding: 5px;" rowspan="2">Arquitectura del computador-1<br>Paola Rugero</td>
+            
+        </tr>
+        <tr>
+            <td style="text-align: center;padding: 5px;">1:00-2:20</td>
+            <td colspan="4"></td>
+        </tr>
+       
+    </table>
+    <br>
+    <form style="padding: 100px;">
+        <fieldset style="background-color: white; font-family: Arial, Helvetica, sans-serif;font-size: large;">
+
+        <legend>Datos del Usuario</legend>
+        <label for="Name">Nombre</label><br>
+        <input type="text" id="Name" name="Name"><br>
+
+        <label for="LastName">Apellido</label><br>
+        <input type="text" id="LastName" name="LastName"><br>
+
+        <label for="CI">Cedula</label><br>
+        <input type="text" id="CI" name="CI"><br>
+    
+        <label for="mail">Correo</label><br>
+        <input type="email" id="mail" name="mail"><br>
+
+        <label for="Date">Fecha de Nacimiento</label><br>
+        <input type="date" id="Date" name="Date"><br>
+        <br>
+
+         <legend>Selecciona tu género:</legend>
+        
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+       
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br>
+       
+        <legend>Selecciona tu nivel academico:</legend>
+        <input type="checkbox" id="Preescolar" name="nivel" value="Preescolar">
+        <label for="Preescolar">Preescolar</label>    
+
+        <input type="checkbox" id="Primaria" name="nivel" value="Primaria">
+        <label for="Primaria">Primaria</label>
+       
+        <input type="checkbox" id="Secundaria" name="nivel" value="Secundaria">
+        <label for="Secundaria">Secundaria</label>
+        
+        <input type="checkbox" id="Universitario" name="nivel" value="Universitario">
+        <label for="Universitario">Primaria</label>
+
+        <legend>Seleccione su PNF:</legend>
+        <label>
+            <input type="text" list="carreras" name="pnf">
+            <datalist id="carreras">
+                <option value="Informatica">
+                <option value="Contaduria">
+                <option value="Turismo">
+                <option value="Deportes">
+            </datalist>
+        </label>
+
+        </fieldset>
+       </form> 
+    </body>
+</html>
